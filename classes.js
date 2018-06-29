@@ -5,9 +5,10 @@ document.addEventListener('DOMContentLoaded', start)
 
 function start () {
   // The first example is done for you. Uncomment the line below and reload the browser.
-  // one()
+  one()
     
   // Your turn! Create a new function called `two`, then call it from here.
+  two()
 }
 
 function one () {
@@ -19,6 +20,13 @@ function one () {
 }
 
 // CREATE FUNCTION two HERE
+function two () {
+  //First, find element to be changed using getElementbyId:
+  var two = document.getElementById('two')
+
+  //Next, add new class using toggle function:
+  two.classList.toggle('green') 
+}
 
 // CREATE FUNCTION three HERE
 
